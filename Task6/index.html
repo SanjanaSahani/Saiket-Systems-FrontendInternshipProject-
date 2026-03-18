@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AcmeCloud | Simple Team Collaboration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Acme<span>Cloud</span></div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <button id="cta-nav" class="btn btn-primary">Get Started</button>
+    </nav>
+    <button id="burger" class="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <h1>Collaborate with your team in minutes</h1>
+        <p>AcmeCloud helps your team share files, chat in real time, and stay in sync across all devices.</p>
+        <form id="hero-form" class="hero-form">
+          <input type="email" id="hero-email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Start free trial</button>
+        </form>
+        <p class="hero-note">No credit card required. Free for 14 days.</p>
+      </div>
+      <div class="hero-illustration">
+        <div class="hero-card">
+          <h2>Live Project Board</h2>
+          <ul>
+            <li>Task created: Landing page redesign</li>
+            <li>New message: Alice mentioned you</li>
+            <li>File uploaded: Q1-report.pdf</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <h2 class="section-title">Powerful features, simple UI</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Real-time chat</h3>
+          <p>Message your teammates instantly and keep all conversations in one place.</p>
+        </article>
+        <article class="feature-card">
+          <h3>File sharing</h3>
+          <p>Upload, preview, and organize files with version history and comments.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Boards & tasks</h3>
+          <p>Plan sprints, assign owners, and track progress visually.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-alt" id="pricing">
+      <h2 class="section-title">Flexible pricing for every team</h2>
+      <div class="pricing-toggle">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-toggle" />
+          <span class="slider"></span>
+        </label>
+        <span>Yearly <span class="badge">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price"><span class="currency">₹</span><span class="amount" data-month="499" data-year="399">499</span>/user</p>
+          <ul>
+            <li>Up to 5 users</li>
+            <li>5 GB storage</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn btn-outline select-plan" data-plan="Starter">Choose plan</button>
+        </article>
+        <article class="price-card price-card-featured">
+          <div class="pill">Most popular</div>
+          <h3>Team</h3>
+          <p class="price"><span class="currency">₹</span><span class="amount" data-month="999" data-year="799">999</span>/user</p>
+          <ul>
+            <li>Unlimited users</li>
+            <li>1 TB storage</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-primary select-plan" data-plan="Team">Choose plan</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / form -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Talk to our team</h2>
+      <div class="contact-layout">
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="email" required />
+          </label>
+          <label>
+            Team size
+            <select id="team-size" required>
+              <option value="">Select</option>
+              <option value="1-5">1–5</option>
+              <option value="6-20">6–20</option>
+              <option value="21-50">21–50</option>
+              <option value="50+">50+</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea id="message" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Request demo</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+        <div class="contact-info">
+          <h3>Prefer email?</h3>
+          <p>Drop us a line at <strong>hello@acmecloud.io</strong> and we’ll get back within one business day.</p>
+          <p>Business hours: 9:00–18:00 IST, Monday to Friday.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> AcmeCloud Inc. All rights reserved.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
